@@ -7,7 +7,7 @@
 }
 
 html {
-  min-width: 376px;
+  min-width: 23.5rem;
 }
 
 body {
@@ -29,7 +29,7 @@ main {
   background: hsl(0, 0%, 100%);
   border-radius: 1.4rem;
   padding: 2rem 0rem;
-  width: 376px;
+  width: 23.5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -95,7 +95,7 @@ p {
 .choice-buttons button {
   color: hsl(0, 0%, 100%);
   background-color: hsl(183, 100%, 15%);
-  width: 148px;
+  width: 9.25rem;
   cursor: pointer;
 }
 
@@ -110,7 +110,7 @@ p {
   color: hsl(183, 100%, 15%);
   text-align: right;
   padding-right: 1.2rem;
-  width: 148px;
+  width: 9.25rem;
   margin: 0;
 }
 
@@ -174,7 +174,7 @@ p {
 .total-title {
   display: flex;
   flex-direction: column;
-  width: 110px;
+  width: 6.875rem;
 }
 
 .tip-title:first-child,
@@ -213,16 +213,19 @@ p {
   border: 2px solid rgb(245, 85, 85);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   .logo-container {
     margin-bottom: 4.6rem;
   }
   .calculator-container {
     display: flex;
-    min-width: 920px;
+    min-width: 57.5rem;
   }
   .bill-label {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
+  }
+  #bill {
+    margin-bottom: 2.4rem;
   }
   .choice-buttons {
     gap: 0.8rem;
@@ -241,15 +244,12 @@ p {
   }
 
   .choice-buttons button {
-    width: 120px;
+    width: 7.5rem;
   }
   .choice-buttons .custom {
-    width: 120px;
-    padding-right: 0.8rem;
+    width: 7.5rem;
+    padding-right: 0.2rem;
   }
-  /* .choice-buttons .custom::placeholder {
-    text-align: center;
-  } */
   .calculations-container {
     display: flex;
     flex-direction: column;
@@ -263,7 +263,7 @@ p {
     align-items: center;
   }
   .total-amount-container {
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
   }
   .tip-amount-container > span,
   .total-amount-container > span {
