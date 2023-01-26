@@ -89,6 +89,7 @@ p {
   color: hsl(0, 0%, 100%);
   background-color: hsl(183, 100%, 15%);
   width: 148px;
+  cursor: pointer;
 }
 
 .choice-buttons button:focus,
@@ -189,6 +190,7 @@ p {
   color: hsl(183, 100%, 15%);
   text-transform: uppercase;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .calculations-container button:hover,
@@ -201,5 +203,5 @@ p {
 }
 
 .error-outline {
-  outline: 2px solid rgb(245, 85, 85);
+  border: 2px solid rgb(245, 85, 85);
 }
