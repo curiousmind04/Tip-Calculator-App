@@ -22,38 +22,41 @@
         <img src="images/logo.svg" alt="logo icon" />
       </h1>
       <div class="calculator-container">
-        <div class="bill-total-container">
-          <div class="bill-label">
-            <label for="bill">Bill</label
-            ><span class="bill-error-message">Can't be negative</span>
+        <div>
+          <div class="bill-total-container">
+            <div class="bill-label">
+              <label for="bill">Bill</label
+              ><span class="bill-error-message">Can't be negative</span>
+            </div>
+            <input type="number" id="bill" name="bill" value="0.00" min="0" />
           </div>
-          <input type="number" id="bill" name="bill" value="0.00" min="0" />
-        </div>
-        <div class="tip-choices-container">
-          <p>Select Tip %</p>
-          <div class="choice-buttons">
-            <button class="five percentage" value="0.05">5%</button>
-            <button class="ten percentage" value="0.10">10%</button>
-            <button class="fifteen percentage" value="0.15">15%</button>
-            <button class="twenty-five percentage" value="0.25">25%</button>
-            <button class="fifty percentage" value="0.50">50%</button>
-            <input
-              type="number"
-              name="custom"
-              class="custom"
-              placeholder="Custom"
-              min="0"
-              max="1000"
-            />
+          <div class="tip-choices-container">
+            <p>Select Tip %</p>
+            <div class="choice-buttons">
+              <button class="five percentage" value="0.05">5%</button>
+              <button class="ten percentage" value="0.10">10%</button>
+              <button class="fifteen percentage" value="0.15">15%</button>
+              <button class="twenty-five percentage" value="0.25">25%</button>
+              <button class="fifty percentage" value="0.50">50%</button>
+              <input
+                type="number"
+                name="custom"
+                class="custom"
+                placeholder="Custom"
+                min="0"
+                max="1000"
+              />
+            </div>
+          </div>
+          <div class="number-of-people">
+            <div class="people-label">
+              <label for="people">Number of People</label>
+              <span class="people-error-message">Can't be zero</span>
+            </div>
+            <input type="number" id="people" name="people" value="1" min="0" />
           </div>
         </div>
-        <div class="number-of-people">
-          <div class="people-label">
-            <label for="people">Number of People</label>
-            <span class="people-error-message">Can't be zero</span>
-          </div>
-          <input type="number" id="people" name="people" value="1" min="0" />
-        </div>
+
         <div class="calculations-container">
           <div class="tip-amount-container">
             <div class="tip-title">

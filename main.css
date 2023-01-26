@@ -6,15 +6,23 @@
   margin: 0;
 }
 
+html {
+  min-width: 376px;
+}
+
 body {
   background: hsl(185, 41%, 84%);
   font-family: "Space Mono", monospace;
-  min-width: 376px;
+}
+
+main {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .logo-container {
   text-align: center;
-  margin: 3rem 0 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .calculator-container {
@@ -22,7 +30,6 @@ body {
   border-radius: 1.4rem;
   padding: 2rem 0rem;
   width: 376px;
-  margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -204,4 +211,62 @@ p {
 
 .error-outline {
   border: 2px solid rgb(245, 85, 85);
+}
+
+@media (min-width: 1000px) {
+  .logo-container {
+    margin-bottom: 4.6rem;
+  }
+  .calculator-container {
+    display: flex;
+    min-width: 920px;
+  }
+  .bill-label {
+    margin-top: 1rem;
+  }
+  .choice-buttons {
+    gap: 0.8rem;
+  }
+  .people-label {
+    padding-top: 0.6rem;
+  }
+  #people {
+    margin-bottom: 1.2rem;
+  }
+  .bill-total-container,
+  .tip-choices-container,
+  .number-of-people {
+    padding-right: 1.4rem;
+    padding-left: 3rem;
+  }
+
+  .choice-buttons button {
+    width: 120px;
+  }
+  .choice-buttons .custom {
+    width: 120px;
+    padding-right: 0.8rem;
+  }
+  /* .choice-buttons .custom::placeholder {
+    text-align: center;
+  } */
+  .calculations-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+    padding: 2.6rem 2.5rem 2.5rem 2.5rem;
+    margin-right: 2rem;
+  }
+  .tip-amount-container,
+  .total-amount-container {
+    align-items: center;
+  }
+  .total-amount-container {
+    padding-bottom: 4rem;
+  }
+  .tip-amount-container > span,
+  .total-amount-container > span {
+    font-size: 3rem;
+  }
 }

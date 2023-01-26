@@ -15,6 +15,7 @@ bill.addEventListener("focus", () => {
   tipAmount.innerHTML = "$0.00";
   totalAmount.innerHTML = "$0.00";
   custom.value = "";
+  custom.classList.remove("error-outline");
 });
 
 people.addEventListener("focus", () => {
@@ -24,6 +25,7 @@ people.addEventListener("focus", () => {
   tipAmount.innerHTML = "$0.00";
   totalAmount.innerHTML = "$0.00";
   custom.value = "";
+  custom.classList.remove("error-outline");
 });
 
 custom.addEventListener("focus", () => {
@@ -81,6 +83,8 @@ const calculate = () => {
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
+    custom.classList.remove("error-outline");
+    custom.value = "";
     percentage = button.value;
     billAmount = bill.value;
     peopleAmount = people.value;
@@ -106,4 +110,10 @@ resetButton.addEventListener("click", () => {
   totalAmount.innerHTML = "0.00";
   people.value = "1";
   bill.value = "0.00";
+  custom.value = "";
+  custom.classList.remove("error-outline");
+  peopleError.classList.remove("visible");
+  people.classList.remove("error-outline");
+  billError.classList.remove("visible");
+  bill.classList.remove("error-outline");
 });
