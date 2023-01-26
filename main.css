@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+  min-width: 376px;
+}
+
+.logo-container {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.calculator-container {
+  background: hsl(0, 0%, 100%);
+  border-radius: 1.4rem;
+  padding: 2rem 0rem;
+  width: 376px;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bill-total-container,
+.tip-choices-container,
+.number-of-people {
+  padding: 0 2rem;
+}
+
+label {
+  color: hsl(186, 14%, 43%);
+}
+
+button,
+input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  height: 3rem;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+input {
+  text-align: right;
+  padding-right: 1rem;
+  color: hsl(183, 100%, 15%);
+  font-size: 1.6rem;
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+input:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+#bill {
+  background: url("images/icon-dollar.svg");
+  background-color: hsl(189, 41%, 97%);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  margin-bottom: 2rem;
+}
+
+.tip-choices-container {
+  margin-bottom: 2rem;
+}
+
+p {
+  color: hsl(186, 14%, 43%);
+  margin-bottom: 1rem;
+}
+
+.choice-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.choice-buttons button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(183, 100%, 15%);
+  width: 148px;
+}
+
+.choice-buttons button:focus,
+.choice-buttons button:hover {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.choice-buttons .custom {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  padding-right: 1.2rem;
+  width: 148px;
+}
+
+.choice-buttons .custom::placeholder {
+  color: hsl(186, 14%, 43%);
+}
+
+.choice-buttons .custom:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+.people-label,
+.bill-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+#people {
+  background: url("images/icon-person.svg");
+  background-color: hsl(189, 41%, 97%);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  margin-bottom: 2rem;
+}
+
+.people-error-message,
+.bill-error-message {
+  visibility: hidden;
+  color: rgb(245, 85, 85);
+}
+
+.calculations-container {
+  background: hsl(183, 100%, 15%);
+  margin: 0 1.6rem;
+  border-radius: 0.8rem;
+  padding: 2.4rem 1.6rem 1.5rem 1.6rem;
+}
+
+.tip-amount-container,
+.total-amount-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip-amount-container {
+  margin-bottom: 1.2rem;
+}
+
+.total-amount-container {
+  margin-bottom: 2rem;
+}
+
+.tip-amount-container > span,
+.total-amount-container > span {
+  font-size: 2rem;
+  color: hsl(172, 67%, 45%);
+}
+
+.tip-title,
+.total-title {
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+}
+
+.tip-title:first-child,
+.total-title:first-child {
+  color: hsl(189, 41%, 97%);
+}
+
+.individual {
+  color: hsl(184, 14%, 56%);
+  font-size: 0.8rem;
+}
+
+.dollar-icon {
+  transform: scale(1.2);
+}
+
+.calculations-container button {
+  background: hsl(172, 67%, 45%);
+  width: 100%;
+  color: hsl(183, 100%, 15%);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.calculations-container button:hover,
+.calculations-container button:active {
+  background: hsl(185, 41%, 84%);
+}
+
+.visible {
+  visibility: visible;
+}
+
+.error-outline {
+  outline: 2px solid rgb(245, 85, 85);
+}

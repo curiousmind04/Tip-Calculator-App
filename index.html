@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Tip Calculator App</title>
 
-  Bill
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="logo-container">
+        <img src="images/logo.svg" alt="logo icon" />
+      </h1>
+      <div class="calculator-container">
+        <div class="bill-total-container">
+          <div class="bill-label">
+            <label for="bill">Bill</label
+            ><span class="bill-error-message">Can't be negative</span>
+          </div>
+          <input type="number" id="bill" name="bill" value="0.00" min="0" />
+        </div>
+        <div class="tip-choices-container">
+          <p>Select Tip %</p>
+          <div class="choice-buttons">
+            <button class="five percentage" value="0.05">5%</button>
+            <button class="ten percentage" value="0.10">10%</button>
+            <button class="fifteen percentage" value="0.15">15%</button>
+            <button class="twenty-five percentage" value="0.25">25%</button>
+            <button class="fifty percentage" value="0.50">50%</button>
+            <input
+              type="number"
+              name="custom"
+              class="custom"
+              placeholder="Custom"
+              min="0"
+              max="1000"
+            />
+          </div>
+        </div>
+        <div class="number-of-people">
+          <div class="people-label">
+            <label for="people">Number of People</label>
+            <span class="people-error-message">Can't be zero</span>
+          </div>
+          <input type="number" id="people" name="people" value="1" min="0" />
+        </div>
+        <div class="calculations-container">
+          <div class="tip-amount-container">
+            <div class="tip-title">
+              <span>Tip Amount</span><span class="individual">/ person</span>
+            </div>
+            <span class="tip-amount">$0.00</span>
+          </div>
+          <div class="total-amount-container">
+            <div class="total-title">
+              <span>Total</span><span class="individual">/ person</span>
+            </div>
+            <span class="total-amount">$0.00</span>
+          </div>
+          <button class="reset-button">Reset</button>
+        </div>
+      </div>
+    </main>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
