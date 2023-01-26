@@ -26,6 +26,11 @@ people.addEventListener("focus", () => {
   custom.value = "";
 });
 
+custom.addEventListener("focus", () => {
+  custom.classList.remove("error-outline");
+  custom.value = "";
+});
+
 const calculate = () => {
   if (
     people.value > 0 &&
@@ -89,7 +94,11 @@ custom.addEventListener("change", () => {
   billAmount = bill.value;
   peopleAmount = people.value;
   tipAmountTotal = (billAmount / peopleAmount) * percentage;
-  calculate();
+  if (custom.value > 0) {
+    calculate();
+  } else {
+    custom.classList.add("error-outline");
+  }
 });
 
 resetButton.addEventListener("click", () => {
