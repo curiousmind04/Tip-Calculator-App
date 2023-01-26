@@ -13,6 +13,9 @@ html {
 body {
   background: hsl(185, 41%, 84%);
   font-family: "Space Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
